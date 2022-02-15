@@ -50,7 +50,6 @@ export default function Board() {
     );
   });
   const rollDice = () => {
-    // check which dies are freezed
     if (tenzies) {
       setBoard(() => fillBoard());
       setTenzies(false);
