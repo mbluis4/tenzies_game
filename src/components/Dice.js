@@ -1,10 +1,7 @@
-export default function Dice(props) {
+export default function Dice({ value, isFreezed, freezeDice }) {
   return (
-    <div
-      className={props.isFreezed ? "dice freezed" : "dice"}
-      onClick={props.freezeDice}
-    >
-      {props.value}
+    <div className={isFreezed ? "dice freezed" : "dice"} onClick={freezeDice}>
+      {value}
     </div>
   );
 }
